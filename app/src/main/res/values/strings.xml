@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="st_textView">Login Chido Paps</string>
+    <string name="edt_usuario">Usuario</string>
+    <string name="login">login</string>
+    <string name="registrate_compa">Registrate compa</string>
+    <string name="contrasenia">Contrasenia</string>
+</resources>
