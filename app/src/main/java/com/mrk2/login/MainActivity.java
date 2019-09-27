@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     txtPswd.setText("");
                     txtUser.setText("");
                     Intent intent = new Intent(this, ListaUsuariosActivity.class);
+                    intent.putExtra("valor","Hello There...");
                     startActivity(intent);
                 }else{
                     mSuperToast("Bad Credentials", Style.TYPE_BUTTON);
