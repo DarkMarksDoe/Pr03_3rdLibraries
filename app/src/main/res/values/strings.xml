@@ -5,5 +5,5 @@
     <string name="login">login</string>
     <string name="registrate_compa">Registrate compa</string>
     <string name="contrasenia">Contrasenia</string>
-    <string name="encabezadoLogin">Ya te registraste papaw</string>
+    <string name="encabezadoLogin">Lista de usuarios del Array</string>
 </resources>

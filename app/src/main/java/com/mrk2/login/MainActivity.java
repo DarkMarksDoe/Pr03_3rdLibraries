@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnLogin, btnRegister;
     EditText txtUser, txtPswd;
-    ArrayList<Cuentas> pepaPig = new ArrayList<>();
+    public static ArrayList<Cuentas> pepaPig = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
