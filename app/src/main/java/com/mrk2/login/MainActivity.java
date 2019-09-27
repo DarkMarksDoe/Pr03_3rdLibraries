@@ -2,6 +2,7 @@ package com.mrk2.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -60,10 +61,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (validate){
-                    mSuperToast("Matando a pepa Pig", Style.TYPE_PROGRESS_BAR);
-                    mSuperToast("Inicio Exitoso",Style.TYPE_BUTTON);
+                    //mSuperToast("Matando a pepa Pig", Style.TYPE_PROGRESS_BAR);
+                    //mSuperToast("Inicio Exitoso",Style.TYPE_BUTTON);
                     txtPswd.setText("");
                     txtUser.setText("");
+                    Intent intent = new Intent(this, ListaUsuariosActivity.class);
+                    startActivity(intent);
                 }else{
                     mSuperToast("Bad Credentials", Style.TYPE_BUTTON);
                 }
@@ -96,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void mSuperToast(String texr, int typeButton) {
+    void mSuperToast(String texr, int typeButton) {
         SuperActivityToast.create(MainActivity.this, new Style(), typeButton)
                 //.setButtonText("Deshacer")
                 //.setButtonIconResource(R.mipmap.ic_launcher)
