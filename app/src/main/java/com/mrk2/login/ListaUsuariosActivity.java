@@ -28,7 +28,10 @@ public class ListaUsuariosActivity extends MainActivity {
         setContentView(R.layout.activity_lista_usuarios);
         //Relationate java control with xml file
         lvUsuarios = findViewById(R.id.lua_list_users);
-        //Bundle bundle = getExtraData();
+        //Sending data to a class, send data from Act2 to Act1
+        Bundle bundle = getIntent().getExtras();
+        String variable = bundle.getString("valor");
+        super.mSuperToast(variable,Style.TYPE_BUTTON);
         cargamePapu();
 
     }
